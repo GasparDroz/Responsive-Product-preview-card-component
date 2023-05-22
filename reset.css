@@ -1,0 +1,57 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+/*improve media defaults*/
+img, picture, video, canvas, svg, source {
+    display: block;
+    max-width: 100%;
+}
+
+h1, h2, h3 {
+	line-height: 1;
+}
+
+/*Avoid text overflows*/
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Create a root stacking context*/
+#root, #__next {
+    isolation: isolate;
+}
